@@ -6,6 +6,7 @@ export default function Appreducer(state,action) {
     // }
     switch(action.type) {
         case 'delet data':
+
 var list=state.transections.filter((item)=>{return (item.id!==action.payload)})
 
 return{
