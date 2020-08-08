@@ -1,6 +1,6 @@
 
 
-import React, { useContext,useState } from 'react';
+import React, { useContext } from 'react';
 import {Globalcontext} from './contaxt'
 
 function Header(props) {
@@ -74,7 +74,7 @@ const context=useContext(Globalcontext)
         {/* <h1 >{item.id}</h1> */}
         {console.log(item, "item####")}
         <div className="col-5 text-right"   >
-        <img onClick={()=>{console.log(context.delettedata(item.id))}} src={process.env.PUBLIC_URL + '/bin.png'} style={{width:"6%",height:"60%"}}/> 
+        <img alt="img of delete" onClick={()=>{console.log(context.delettedata(item.id))}} src={process.env.PUBLIC_URL + '/bin.png'} style={{width:"6%",height:"60%"}}/> 
         </div>
         <div   
  className="col-2"  >
@@ -88,7 +88,6 @@ const context=useContext(Globalcontext)
        
         </div>
         )
-console.log(context.transections)
           })
         }
        

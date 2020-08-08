@@ -37,8 +37,7 @@ var nagitivetemp=0
             nagitivetemp=0
           }
 
-
-        total+=item.amount
+return(        total+=item.amount)
 
       
       }
